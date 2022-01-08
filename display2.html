@@ -1,0 +1,60 @@
+<!--        Justify-content 
+    flex-start: Alinea elementos al lado izquierdo del contenedor.
+    flex-end: Alinea elementos al lado derecho del contenedor.
+    center: Alinea elementos en el centro del contenedor.
+    space-between: Muestra elementos con la misma distancia entre ellos.
+            
+                Align-items
+    space-around: Muestra elementos con la misma separación alrededor de ellos.
+    flex-start: Alinea elementos a la parte superior del contenedor.
+    flex-end: Alinea elementos a la parte inferior del contenedor.
+    center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+    baseline: Muestra elementos en la línea base del contenedor
+    stretch: Elementos se estiran para ajustarse al contenedor.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* header {
+            display: flex;
+            justify-content: space-between;
+            background: papayawhip;
+        } */
+        .container {
+            display: flex; /* only containers*/ 
+            background: papayawhip;
+            justify-content: center; /* from  right to left */
+            align-items: center; /* from up tp down */
+            height:200px; 
+            flex-direction: column; /* Defaul ROW */
+        }
+
+        .item {
+            width: 30px;
+            height: 30px;
+            background-color: purple;
+        }
+        
+        .container .item:nth-child(2n + 1){ /* Elementos impares */
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <picture class="header-child">Soy un logo UwU</picture>
+        <nav  class="header-child">Soy un menú de navegación 7w7</nav>
+    </header> -->
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

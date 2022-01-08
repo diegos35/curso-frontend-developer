@@ -1,0 +1,45 @@
+<!-- Medidas Absolutas
+Es la unidad de medida que no va a cambiar sin importar el tamaño de la pantalla.
+
+Una unidad absoluta puede ser los píxeles.
+
+p {
+    font-size: 18px;
+}
+Medidas Relativas
+Estás si pueden cambiar en relación con el dispositivo que lo estamos viendo.
+
+Las unidades relativas pueden ser porcentajes, em (elemento), rem (root em o root elemento), max-width, max-height, min-width, min-height. Estas últimas varían basándonos en el tamaño de la pantalla.
+
+main {
+    background-color: red;
+    width: 100%; /*Unidad relativa*/
+    height: 500px;
+}
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%; /* para que un rem se = a 10px */
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        p {
+            font-size: 1rem; /* body tiene por defecto un font-size 16px que equivale a 1rem */
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <p>Master</p>
+</body>
+</html>

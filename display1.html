@@ -1,0 +1,58 @@
+<!-- inline: Estos elementos son los que su caja mide exactamente lo mismo que su contenido. 
+            Estos elementos los podemos usar en textos y en lugar de que se agreguen en una nueva línea se
+            agregaran justo al ladito del texto. ❗ Tienen como desventaja que no podemos ponerles márgenes ni tampoco podemos cambiar su tamaño.
+-->
+<!-- block: Una de sus características es que ocupan todo el width disponible en pantalla por defecto, se le puede agregar o cambiar un ancho y largo.             
+-->
+<!-- inline-block:   Esto mezcla lo mejor de ambos mundos. Con este display podemos tener tanto los beneficios de inline como de block, es decir, 
+                    podemos tener elementos que no ocupen todo el ancho de la pantalla, sino que ocupen solamente lo que su contenido ocupa, 
+                    pero también vamos a poder darle márgenes y podremos cambiar su tamaño 
+-->
+<!-- Flex -->
+<!-- Grid -->
+<!-- https://htmlreference.io/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            display: flex;
+            background: salmon;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        a {
+            background: red;
+            /* width: 200px; no se le puede colocar ni margen ni cambiar su tamaño
+            height: 200px; */
+        }
+
+        button {
+            background-color:yellow;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        bloque
+    </div>
+    <div>
+        bloque
+    </div>
+    <div>
+        bloque
+    </div>
+    <a href="/">inline</a>
+    <button>inline block</button>
+</body>
+</html>
